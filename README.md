@@ -11,7 +11,7 @@ This repo contains a series of notebooks which made up the core steps of a 3.5-w
 
 ## Background:
 This project was started as part of the [Metis/DigitalGlobe Data Challenge](http://deepcore.io/2017/06/06/Metis_Project.html) but, when DigitalGlobe released a substanial dataset of the areas just hit by Hurricane Harvey (through it's [Open Data Program](https://www.digitalglobe.com/opendata)) the project quickly evolved into something more immediately relevent, but utilizing a dataset in a less clean state than the SpaceNet dataset I had been planning on working with.  
-
+*To read more about the dataset and to download it: https://www.maxar.com/open-data/hurricane-harvey
 ## Goal:  
 A goal was set to built a model which (once trained) could quickly examine satillite imagry of an area, and create a 'mask' labeling each pixel as either flooded or not (actually it assigns a likelihood of being flooded to each pixel, and a cutoff threshold is set, say P>0.50).  This is an [image segmentation](https://en.wikipedia.org/wiki/Image_segmentation) problem, more specifically **semantic segmentation** where the goal is to identify all of a partilar class.  Though it is unusal in that both a before and after picture of the area will be fed to the model, to help label/segment the post-flood image.
 
